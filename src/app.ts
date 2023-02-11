@@ -1,5 +1,5 @@
 import express from 'express';
-import { chainOfResponsibilityClient } from './chain-of-responsbility';
+import { chainOfResponsibilityClient } from './behavioralPatterns/chain-of-responsibility';
 const app = express();
 const port = 3000;
 
