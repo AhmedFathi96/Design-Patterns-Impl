@@ -1,6 +1,7 @@
 import express from 'express';
 import { chainOfResponsibilityClient } from './behavioralPatterns/chain-of-responsibility';
 import { commandClient } from './behavioralPatterns/command';
+import { iteratorClient } from './behavioralPatterns/iterator';
 const app = express();
 const port = 3000;
 
@@ -21,3 +22,6 @@ console.log("====================>" , chain.requestDayOff(6));
 // Command pattern
 const commandPattern = commandClient
 commandPattern.exec()
+
+const iteratorPattern = iteratorClient
+iteratorPattern.exec()
